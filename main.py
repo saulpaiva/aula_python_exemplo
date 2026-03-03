@@ -9,7 +9,8 @@ significado = input("Digite o significado:")
 
 if word in meme_dict.keys():
     # O que devemos fazer se a palavra for encontrada?
-    
+    print("Esta palavra já existe! Tente outra")
 else:
-    
     # O que devemos fazer se a palavra não for encontrada?
+    meme_dict[word] = significado
+    print(meme_dict)
